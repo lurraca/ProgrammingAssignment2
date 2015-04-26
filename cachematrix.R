@@ -1,4 +1,4 @@
-
+# Entry point to calculate Matrix Inverse with Cache
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -15,8 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInv = getInv) 
 }
 
-
-
+# Get cached value if available, calculate again if not available
 
 cacheSolve <- function(x, ...) {
   matrix <- x$getInv()
